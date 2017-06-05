@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- 
+   Product Catalog
+    
+   -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zip-Mesh - Shielding Tapes and Wraps - EMI Shielding</title>
+ 
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    
+    <!-- ADD FAVICON -->
+    <link rel="shortcut icon" href="http://www.darinjacobson.com/images/z.ico">
+
+    
+    <style>
+        nav {
+            background-color: white;
+        }
+        /* Start Top navbar */
+        .type-usa {
+            display: inline-block;
+            margin-bottom: 0px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #23527c;
+        }
+        .product-search {
+            line-height: 30px;
+            margin-bottom: 0px;
+            padding-top: 4px;
+        }
+        .product-search input {
+            border-radius: 10px;
+            border: 2px solid #B9B7B7;
+        }
+        .product-search button {
+            height: auto;
+        }
+        /* End Top navbar */
+        
+        /* Start Navigation CSS */
+        .main-logo {
+            width: 250px;
+            padding-top: 5px;
+        }
+        .navbar .navbar-toggle .icon-bar {
+            background-color: #23527c;
+        }
+        nav.navbar {
+            margin-bottom: 0px;
+            border-bottom: 1px solid #B9B7B7;
+        }
+        .top-nav-menu li {
+            text-align: center;
+            font-size: .9em;
+        }
+        .top-nav-menu a{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .main-nav li{
+            font-size: 1.2em;
+            text-align: center;
+            padding-left: 10px;
+        }
+        .navbar .main-nav {
+            display: inline-block;
+            float: none;
+        }
+        .main-nav-list li {
+            padding-left: 0px;
+        }
+        .main-nav-list li a:hover {
+            background-color: #005CB9;
+            color: white;
+        }
+        .main-nav-list li a {
+            color: #005CB9;
+        }
+        /* End Navigation CSS */
+        
+        /* Shopping Route */
+        .current-path {
+            margin-top: 10px;
+            padding-left: 0px;
+            margin-bottom: 20px;
+        }
+        .current-path a {
+            text-decoration: none;
+        }
+        .current-path a:hover {
+            font-size: 1.1em;
+        }
+        
+        /* Thumbnail and Gallery */
+        .thumbnail-list img{
+            width: 100%;
+            border: 1px solid #B9B7B7;
+            margin-bottom: 10px;
+        }
+        .thumbnail-list img:hover {
+            border: 3px solid #4080FF;
+        }
+        .show-pic img {
+            max-width: 100%;
+        }
+        /* End of Thumbnail and Gallery */
+        
+        /* Current product options and details */
+        .options p span {
+            margin-left: 20px;
+        } 
+        .part-no {
+            color: red;
+        }
+        .show-details {
+            margin-top: 15px;
+        }
+        .product-overview h1, .product-specs h1 {
+            font-weight: 200;
+            border-bottom: 2px solid #0061A7;
+        }
+        .product-overview h3 {
+            color: #0061A7;
+        }
+        .product-overview, .product-specxs {
+            margin-bottom: 20px;
+        }
+        .product-overview p:last-child {
+            padding-bottom: 20px;
+            border-bottom: 2px solid #0061A7;
+        }
+        
+        /* Main body */
+        .features-benefits lh, .add-features-benefits lh, .specs lh{
+            font-size: 1.2em;
+            border-bottom: 2px solid #0061A7;
+        }
+        .features-benefits ul, .add-features-benefits ul, .specs ul {
+            list-style: none;
+        }
+        .add-features-benefits {
+            margin-top: 30px;
+            font-size: 1.3em;
+        }
+        /* Main body end */
+        
+        /* Start of footer */
+        .footer {
+            margin-top: 20px;
+        }
+        .footer-section {
+            margin-top: 20px;
+        }
+        .footer-section p {
+            margin-bottom: 5px;
+            font-size: .8em;
+        }
+        .footer-section a {
+            color: #838383;
+        }
+        .footer-section a:hover {
+            color: #0061A7;
+            text-decoration: none;
+        }
+        .footer-titles {
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        .newsletter-email {
+            width: 160px;
+            line-height: 30px;
+            border-radius: 10px;
+            border: 2px solid #B9B7B7;
+            margin-right: 3px;
+        }
+        .bbb-logo {
+            width: 50%;
+        }
+        .bbb-logos {
+            margin-top: 10px;
+        }
+        /* End of footer */
+        
+        /* Media Queries */
+        @media (min-width: 1260px) {
+            .main-logo {
+              margin-left: 220px;
+            }
+        }
+        
+        @media (min-width: 100px) and (max-width: 767px) {
+            .main-nav {
+              width: 100%;
+            }
+            .type-usa {
+                display: none;
+            }
+            .bbb-logo {
+                width: 30%;
+            }
+            .connect {
+                text-align: center;
+            }
+            .bbb-logos, .newsletter-entry, .show-pic {
+                clear: both;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align:center;
+            }
+            .thumbnail-list {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .submit-product-search {
+                width: 100%;
+                margin: 10px 0 10px 0;
+            }
+            .newsletter-email {
+                width: 100%;
+            }
+        }
+
+    </style>
+    <script>
+        $(document).ready(function () {
+            // zipMesh object is representing what would be returned from query
+            var zipMesh = {
+                partNumber: "ZT16-03-001-1.0",
+                images: {
+                    pic1: "https://www.zippertubing.com/images/parts/thumbs/1inch-zip-mesh-emi-shielding-knitted-mesh-tape-with-adhesive.jpg",
+                    pic2: "https://www.zippertubing.com/images/parts/thumbs/ROLL-1inch-zip-mesh-emi-shielding-knitted-mesh-tape-with-adhesive.jpg"
+                },
+                options: {
+                    size: [
+                        "1 inch Wide",
+                        "2 inch Wide",
+                    ],
+                    maxQuantity: 50,
+                },
+                standardOptions: {
+                    shape: [
+                        "Shape of Installation",
+                        "ALL"
+                    ],
+                    shielding: [
+                        "Shielding",
+                        "36 AWG Wire Mesh"
+                    ],
+                    closure: [
+                        "Closure",
+                        "Adhesive"
+                    ],
+                    rollLength: [
+                        "Roll Length",
+                        "16.4 ft. Roll"
+                    ],
+                    unitsPerBox: [
+                        "Units Per Box",
+                        "2 Roll Pack"
+                    ]
+                }
+            };
+            
+            /*  Function to add images to thumbnail gallery
+                Image url and class names taken from mock object above */
+            for (var pic in zipMesh.images) {
+                if (zipMesh.images.hasOwnProperty(pic)) {
+                    console.log(zipMesh.images[pic]);
+                    $(".thumbnail-list").append('<div class="col-xs-6 col-sm-12"><img class="' + pic + '" src="' + zipMesh.images[pic] + '"></div>');
+                }
+            }
+            
+            /* Function to place first picture as default */
+            $(".show-pic").html('<a data-fancybox="gallery" href="' + zipMesh.images.pic1 + '"><img src="' + zipMesh.images.pic1 + '" width="450"></a>');
+           
+            /* Functions to add click event to choose image from thumbnail */
+            $(".pic1").click(function() {
+                $(".show-pic").html('<a data-fancybox="gallery" href="' + zipMesh.images.pic1 + '"><img src="' + zipMesh.images.pic1 + '" width="450"></a>');
+            });
+            $(".pic2").click(function() {
+                $(".show-pic").html('<a data-fancybox="gallery" href="' + zipMesh.images.pic2 + '"><img src="' + zipMesh.images.pic2 + '" width="450"></a>');
+            });
+            
+            /* Function to add part number */
+            $(".part-no").html(zipMesh.partNumber);
+            
+            // Hide Standard Details on page load
+            $(".form-details").hide();
+            
+            
+            // toggle Standard Details on button click
+            var showDetails = true;
+            $(".show-details").click(function(){
+                $(".form-details").toggle(500);
+                if(showDetails === true) {
+                    $(".show-details").html("Hide Standard Details");
+                    showDetails = false;
+                }
+                else {
+                    $(".show-details").html("Show Standard Details");
+                    showDetails = true;
+                }
+            });
+            
+        });
+    </script>
+</head>
+<body>
+   
+    <!-- Top navbar includes USA Product caption, login & signup buttons, and product search form -->
+    <nav class="navbar">
+        <div class="container-fluid">
+           <div class="col-xs-12 col-sm-6">
+                <p class="type-usa"><img src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_States.png" width="50">Over 60 Years of Quality Products &amp; Solutions Made in the USA</p>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-sm-offset-1 navbar-right">
+               <div>
+                    <ul class="nav navbar-nav top-nav-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    </ul>
+                </div>
+                <form class="form-inline product-search">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search for product">
+                    <button class="submit-product-search btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End of top navbar -->
+    
+    <!-- Primary navbar includes logo and main menu -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+         <a href="https://www.zippertubing.com/"><img class="main-logo" src="https://www.zippertubing.com/images/headerLogo.png" /></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav main-nav">
+            <li class="active"><a href="#">Home</a></li> 
+            
+            <!-- Proven Solutions Dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proven Solutions<span class="caret"></span></a>
+              <ul class="dropdown-menu main-nav-list">
+                <li><a href="#">Wire Bundling &amp; Cable Management</a></li>
+                <li><a href="#">Heat Shrink Products</a></li>
+                <li><a href="#">Thermal Management</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">UL Recognized Products</a></li>
+                <li><a href="#">Browse By Trade Names</a></li>
+              </ul>
+            </li>
+            
+            <!-- Custom Materials Dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Custom Materials<span class="caret"></span></a>
+              <ul class="dropdown-menu main-nav-list">
+                <li><a href="#">Jacketing</a></li>
+                <li><a href="#">Shielding</a></li>
+                <li><a href="#">Heat Reflective</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Military Spec Materials</a></li>
+                <li><a href="#">RoHS Compliant Materials</a></li>
+              </ul>
+            </li>
+           
+            <!-- Company Info Dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company Info<span class="caret"></span></a>
+              <ul class="dropdown-menu main-nav-list">
+                <li><a href="#">Industries</a></li>
+                <li><a href="#">Capabilities</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Family of Companies</a></li>
+              </ul>
+            </li>
+            
+            <!-- Resources Dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources<span class="caret"></span></a>
+              <ul class="dropdown-menu main-nav-list">
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Engineers Knowledgebase</a></li>
+                <li><a href="#">Installation Instructions</a></li>
+                <li><a href="#">Memberships &amp; Certificates</a></li>
+                <li><a href="#">Newsletters</a></li>
+              </ul>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of primary navbar -->
+    
+    <!-- SHOWS CURRENT PATH TO PRODUCT -->
+    <div class="container current-path">
+        <div class="row">
+            <div class="col-xs-12 col-sm-5">
+                <p><a href="#">Home</a> / <a href="#">EMI Shielding</a> / <a href="#">Shielding Tapes &amp; Wraps</a> / <a href="#">Zip-Mesh</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Start of current product page --> 
+    <div class="container">
+        <div class="row">
+         <!-- Item Photo Gallery Shows Below -->
+            <div class="col-xs-12 col-sm-2 thumbnail-list">
+            </div>
+            <div class="col-xs-12 col-sm-4 show-pic">
+                
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 product-info">
+                <h2><img style="margin-right: 20px;" src="https://www.zippertubing.com/images/new_flag.jpg">Zip-Mesh<span style="font-size: .7em;"><sup>&trade;</sup></span></h2>
+                <p>Part Number: <span class="part-no"></span><img style="margin-left: 20px;" src="https://www.zippertubing.com/images/rohs-icon.png?MT=1493530638" height="26px;"></p>
+                <div class="options">
+                   <h3>Options</h3>
+                    <form>
+                     <div class="row">
+                      <div class="form-group col-xs-12 col-sm-6">
+                        <label for="width">Width of Tape Roll</label>
+                        <select class="form-control">
+                          <option>1"</option>
+                          <option>2"</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-xs-12 col-sm-6">
+                        <label for="quantity">Quantity</label>
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      </div>
+
+                        <div class="row details">
+                           <div class="col-xs-12">
+                               <button type="submit" class="col-xs-12 col-sm-6 btn btn-primary">Request a Quote</button>
+                           </div>
+                           <div class="col-xs-12">
+                               <button class="col-xs-12 col-sm-6 btn btn-info show-details" type="button">Show Standard Details</button>
+                           </div>
+                        </div>
+                      <div class="row form-details">
+                            <div class="form-group col-xs-6">
+                                <label for="shape">Shape of Installation</label>
+                                <input class="form-control" id="disabled" type="text" placeholder="ALL" disabled>
+                            </div>
+                            <div class="form-group col-xs-6">
+                                <label for="shielding">Shielding</label>
+                                <input class="form-control" id="disabled" type="text" placeholder="36 AWG Wire Mesh" disabled>
+                            </div>
+                            <div class="form-group col-xs-6">
+                                <label for="closure">Closure</label>
+                                <input class="form-control" id="disabled" type="text" placeholder="Adhesive" disabled>
+                            </div>
+                            <div class="form-group col-xs-6">
+                                <label for="roleLength">Roll Length</label>
+                                <input class="form-control" id="disabled" type="text" placeholder="16.4 ft. Roll" disabled>
+                            </div>
+                            <div class="form-group col-xs-6">
+                                <label for="unitsPerBox">Units Per Box</label>
+                                <input class="form-control" id="disabled" type="text" placeholder="2 Roll Pack" disabled>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 product-overview">
+                <h1>Product Overview</h1>
+                <h3>EMI Shielding Knitted Mesh Tape, Adhesive Backed</h3>
+                <p>Zip-Mesh™ is a highly flexible, easy-to-use EMI shielding knitted-mesh tape comprised of two-ply, 36 AWG woven tinned-plated copper mesh with a high-temperature, solvent-resistant adhesive backing. The knitted mesh design creates a highly flexible shield that unlike many tubular braids will not change its attenuation performance when articulated.</p>
+                <p>Zip-Mesh™ knitted-mesh tape is ideal for applications where high flexibility in repair locations, splices, branch-outs, or transitions is needed. Although this product comes standard in 1.0” and 2.0” tape widths from our website, custom sizes, shapes and lengths are also available by contacting us directly.</p>
+                <p><strong>Zippertubing’s Zip-Mesh™ is intended to complement Zipper-Mesh™ and other SHX knitted-mesh series products.</strong></p>
+                <p>This product has an operational temperature range of -40° to 149°C (-40° to 300°F).</p>
+            </div>
+            <div class="col-xs-12 col-sm-8 features-benefits">
+                <div class="row">
+                   <div class="col-xs-12 col-sm-6 features-benefits">
+                    <ul>
+                        <lh><strong>Features:</strong></lh>
+                        <li>EMI Shielding (500 KHz to 500 MHz)</li>
+                        <li>Extremely flexible &amp; lightweight</li>
+                    </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 features-benefits">
+                    <ul>
+                        <lh><strong>Benefits:</strong></lh>
+                        <li>Withstands lightning strikes</li>
+                        <li>Non-flammable</li>
+                    </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 add-features-benefits">
+                    <ul>
+                        <lh><strong>Additional Information</strong></lh>
+                        <li><a href="#">Printable Datasheet</a></li>
+                        <li><a href="#">Termination &amp; Splicing of Shielded Products</a></li>
+                        <li><a href="#">Tape Wrapping Wire &amp; Cable Harnesses Guide</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 features-benefits">
+                <ul>
+                    <lh><strong>Recommended Uses</strong></lh>
+                    <li>Aerospace</li>
+                    <li>Military</li>
+                    <li>Marine</li>
+                    <li>Automotive/Trucks/Bus</li>
+                    <li>Railroad</li>
+                    <li>Industrial/Commercial</li>
+                    <li>Space</li>
+                    <li>Energy</li>
+                    <li>Medical/Dental</li>
+                    <li>Electronics</li>
+                    <li>Food Industry</li>
+                </ul>
+            </div>
+        </div>
+                <div class="row">
+            <div class="col-xs-12 product-specs">
+                <h1>Product Specifications</h1>
+                <div class="row">
+                   <div class="col-xs-12 col-sm-6 specs">
+                    <ul>
+                        <lh><strong>RoHS</strong></lh>
+                        <li>Compliant</li>
+                    </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 specs">
+                    <ul>
+                        <lh><strong>Shelf-Life</strong></lh>
+                        <li>24 months</li>
+                    </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 specs">
+                    <ul>
+                        <lh><strong>Temperature Range</strong></lh>
+                        <li>-40&deg; to 149&deg;C 	&#40;-40&deg; to 300&deg;F	&#41;</li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                        <img src="https://www.zippertubing.com/images/charts/shx-2_attenuation_chart.jpg?mt=124" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="border-top: 1px solid #0061A7;"></div>
+    <!-- End of current product page --> 
+    
+    <!-- BEGINNING OF FOOTER -->
+    <div class="container footer">
+        <div class="row footer-section">
+            <div class="col-sm-12 col-md-6">
+               <div class="row">
+                   <div class="col-xs-4 col-sm-4">
+                        <h6 class="footer-titles"><strong>COMPANY INFO</strong>
+                        </h6>
+                        <p><a href="#">About Us</a></p>
+                        <p><a href="#">Contact Us</a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+                        <p><a href="#">Terms</a></p>
+                        <p><a href="#">Reps &amp; Distributors</a></p>
+                        <p><a href="#">Jobs</a></p>
+                    </div>
+                    <div class="col-xs-4 col-sm-4">
+                        <h6 class="footer-titles"><strong>CUSTOMERS</strong></h6>
+                        <p><a href="#">My Account</a></p>
+                        <p><a href="#">Request for Quotes</a></p>
+                        <p><a href="#">Create an Account</a></p>
+                        <p><a href="#">Survey</a></p>
+                        <p><a href="#">Login</a></p>
+                    </div>
+                    <div class="col-xs-4 col-sm-4">
+                        <h6 class="footer-titles"><strong>RESOURCES</strong></h6>
+                        <p><a href="#">Catalog</a></p>
+                        <p><a href="#">Upcoming Events</a></p>
+                        <p><a href="#">Videos</a></p>
+                        <p><a href="#">Industries</a></p>
+                        <p><a href="#">Capabilities</a></p>
+                        <p><a href="#">Site Map</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 connect">
+                                <h6><strong>CONNECT WITH US</strong></h6>
+                                <!-- Facebook Icon -->
+                                <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-32.png"></a>
+                                <!-- Vimeo Icon -->
+                                <a href="#"><img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Vimeo-32.png"></a>
+                                <!-- YouTube Icon -->
+                                <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/red-social-media-icons-1/32/RS_Social_Media_Icons-Youtube-32.png"></a>
+                                <!-- Google+ Icon -->
+                                <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/google_circle-32.png"></a>
+                                <!-- Twitter Icon -->
+                                <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-32.png"></a>
+                                <!-- LinkedIn Icon -->
+                                <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-32.png"></a>                          
+                            </div>
+                            <div class="col-xs-12 bbb-logos">
+                                <a href="https://www.bbb.org/phoenix/business-reviews/commercial-products-manufacturers/the-zippertubing-company-in-chandler-az-1000042751/#bbbonlineclick"><img class="bbb-logo" src="https://www.bbb.org/TerminusContent/BusinessProfile/images/AB_logo_270x103.png" alt="Better Business Bureau Logo">
+                                    <img src="http://www.darinjacobson.com/images/bbb-logo.png" alt="BBB A+ Logo" width="80"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 newsletter-entry">
+                        <h6><strong>JOIN OUR NEWSLETTER</strong></h6>
+                        <form>
+                            <div class="form-group newsletter-entry">
+                                <input type="email" style="display: inline-block;" class="form-control newsletter-email" placeholder="Enter email">
+                                <button type="button" class="btn btn-primary">Send</button>
+                                <p><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF FOOTER -->
+</body>
+</html>
